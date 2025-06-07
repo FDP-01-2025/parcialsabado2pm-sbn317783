@@ -1,11 +1,12 @@
 #include <iostream>
 using namespace std;
-#include <cctype> // convierte a minusculas para que no haya errores por parte del usuario
 
 main (){
 char calificacion;
-cout << "Escribe una calificacion usando el sistema americano";
+cout << "Escribe una calificacion usando el sistema americano\n";
 cin >> calificacion;
+
+
 
 switch (calificacion)
 {
@@ -24,15 +25,16 @@ case 'C':
 
 case 'D':
     cout << "No muy bien";
+    break;
 
 case 'F':
     cout << "Reprobado";
+    break;
 
 default:
-    break;
+    cout << "Por favor, asegurese de poner una de las letras del sistema americano en mayuscula";
+
 }
-
-
 
 
 return 0;
